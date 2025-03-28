@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "La Ciudadela",
+        "review": "Descubre las maravillas escondidas en los bosques de Estados Unidos.",
+        "author": "David Jones", 
+        "imageAutor": "src/assets/images/photo-david.jpg",
+        "date": "May 6, 2020"
+    },
+    {
+        "id": 2,
+        "title": "Space X",
+        "review": "Elon Musk, un emprendedor con otra visión millonaria.",
+        "author": "Lauren Murphy", 
+        "imageAutor": "src/assets/images/photo-lauren.jpg",
+        "date": "May 3, 2020"
+    }
+]
