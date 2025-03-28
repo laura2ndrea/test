@@ -4,6 +4,6 @@ export default function Button({ text, className  }) {
         <button className={`${className} px-4 py-2 bg-[#90b687] transition-transform duration-700 hover:opacity-70`}>
             {text}
         </button>
-    )
+    );
 }
 
