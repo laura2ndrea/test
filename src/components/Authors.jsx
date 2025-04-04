@@ -9,7 +9,7 @@ export default function Authors ({ url }) {
     if (error) return <p>Error: {error}</p>; 
 
     return (
-        <div className="w-[35%] bg-[#F2F2F2] p-4 rounded-xl shadow-lg text-[#343A3F]">
+        <div className="w-full bg-[#F2F2F2] p-4 rounded-xl shadow-lg text-[#343A3F]">
             <div className="flex justify-between">
                 <h1 className="text-2xl">Autores</h1>
                 <Button text="Ver todo" className="rounded-full text-xs bg-[#e6eee2]"/>

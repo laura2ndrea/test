@@ -1,8 +1,8 @@
 import Button from "./Button"; 
 
-export default function Recent ( {data} ) {
+export default function Recent ( { data, className } ) {
     return (
-        <section className="w-[20%] bg-[#F2F2F2] p-4 rounded-xl shadow-lg text-[#343A3F]">
+        <section className={`${className} w-full bg-[#F2F2F2] p-4 rounded-xl shadow-lg text-[#343A3F]`}>
             <div className="flex justify-between">
                 <h1 className="text-2xl font-bold">Reciente</h1>
                 <Button text="Ver todo" className="rounded-full text-xs bg-[#e6eee2]"/>

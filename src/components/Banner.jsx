@@ -1,12 +1,9 @@
-import banners from "/src/data/banners.json";
-
-export default function Banner({ id, children, className}) {
-    const banner = banners.find((b) => b.id == id);
+export default function Banner({ banner, children, className}) {
     return (
-        <section className={`${className} flex p-4 rounded-2xl w-[47%] h-[33%]`}>
-            <div className="text-white text-lg">
+        <section className={`${className} flex p-4 rounded-2xl w-[95%] h-auto`}>
+            <div className="text-white">
                 <h1 className="py-2">{banner.title}</h1>
-                <div className="text-sm">
+                <div className="text-xs">
                     {banner.text.map((line, index) => 
                         <p key={index}>
                             {line}
@@ -15,7 +12,7 @@ export default function Banner({ id, children, className}) {
                 </div>
                 {children}
             </div>
-            <img src={banner.srcImage} alt={banner.altImage} className="w-[50%]"/>
+            <img src={banner.srcImage} alt={banner.altImage} className="w-[30%] m-0"/>
         </section>
     );
 }
