@@ -10,8 +10,8 @@ import books from "./data/books.json";
 function App() {
   return (
     <div className="flex justify-between h-full bg-gray text-[#343A3F] font-red-hat-display">
-      <Menu className="fixed z-0 h-full"/>
-      <Home className="fixed ml-[18%] z-2"/>
+      <Menu className="fixed z-0 h-full hidden md:block"/>
+      <Home className="fixed ml-[18%] z-2 sm:w-full ml-[0%] rounded-none"/>
     </div>
   )
 }

@@ -3,6 +3,9 @@
 
 @theme {
   --font-red-hat-display: "Red Hat Display", sans-serif;
+  --color-primary-color: #7DA870; 
+  --color-secondary-color: #E9A763;
+  --color-tertiary-color: #343A3F;
 }
 
 /*:root {

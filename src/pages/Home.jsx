@@ -95,7 +95,7 @@ export default function Home({ className }) {
                     <div className="flex-[1] bg-amber-500 p-2 m-2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum, mauris dictum pulvinar vestibulum, ligula dui scelerisque nisi, nec lacinia nisi lacus vel elit. In aliquam mauris id nunc rhoncus imperdiet ut in est. Maecenas vehicula a tortor id ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Vestibulum interdum aliquam finibus. Proin id suscipit neque, at faucibus ipsum. Ut et tellus in velit ultricies condimentum ac eget lacus. Maecenas porta dignissim feugiat. Nunc feugiat molestie scelerisque.
                     </div>
-                    <div className="flex flex-[3] bg-lime-500">
+                    <div className="flex flex-[3] bg-lime-500 sm:flex-col">
                         <div className="flex flex-col flex-[2] bg-emerald-500">
                             <div className="flex flex-[1] justify-between bg-cyan-500">
                                 <div className="aspect-square bg-indigo-500 m-2">Mini1</div>

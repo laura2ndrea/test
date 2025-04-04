@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Menu( {className} ) {
     return (
-        <nav className={`${className} flex h-full w-[20%] bg-[#7DA870] p-4`}>
+        <nav className={`${className} flex h-full w-[20%] bg-primary-color p-4`}>
             <div className="flex flex-col h-full w-[85%] justify-between items-center py-[80px]">
                 <FontAwesomeIcon icon={faBook} className=" bg-[#90B687] text-white text-4xl px-4 py-3 rounded-lg shadow-lg" />
                 <ul className="text-center text-white text-sm leading-loose font-extralight">
