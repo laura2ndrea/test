@@ -13,7 +13,7 @@ export default function Menu( {className} ) {
                     <li className="cursor-pointer transition-all duration-500 hover:font-bold hover:before:content-['>']"><a href="#"> Editores</a></li>
                     <li className="cursor-pointer transition-all duration-500 hover:font-bold hover:before:content-['>']"><a href="#"> Lectores</a></li>
                 </ul>
-                <Button text="Crear" className="text-white text-sm rounded-lg w-[50%] shadow-lg">
+                <Button text="Crear" variant="primary">
                     <FontAwesomeIcon icon={faPlus} className="ml-2"/>
                 </Button>
             </div>
