@@ -1,4 +1,4 @@
-export default function Button({ text, children, className="", variant }) {
+export default function Button({ children, className="", variant }) {
     // Default styles for buttons
     const baseStyle = "px-4 py-2 transition-all duration-300 hover:opacity-60"
     const variants = {
@@ -7,8 +7,7 @@ export default function Button({ text, children, className="", variant }) {
         tertiary: "bg-[#E6EEE2] text-secondary-color text-xs rounded-full"
     }
     return (
-        <button className={`${className} ${baseStyle} ${variants[variant] || variants.primary}`}>
-            {text}
+        <button className={`${baseStyle} ${variants[variant] || variants.primary} ${className} `}>
             {children}
         </button>
     );

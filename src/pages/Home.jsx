@@ -1,3 +1,9 @@
+export default function Home( {className} ) {
+    return (
+        <div className={`fixed flex flex-col bg-red-500 w-full h-full overflow-auto ${className}`}></div>
+    );
+}
+
 /*import SearchBar from "../components/SearchBar";
 
 export default function Home ({ className }) {
@@ -86,7 +92,7 @@ function ContentBox({ children, className }) {{`${className} flex bg-red-500 w-[
     return <div className={`p-4 flex items-center justify-center ${className}`}>{children}</div>;
 } */
 
-export default function Home({ className }) {
+{/*export default function Home({ className }) {
     return (
         <div className="">
             <div className="flex flex-col basis-2/3 h-fit bg-yellow-500">
@@ -137,4 +143,4 @@ export default function Home({ className }) {
             </div>
         </div>
     );
-}
+}*/}
