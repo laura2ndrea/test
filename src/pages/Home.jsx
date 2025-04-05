@@ -82,13 +82,13 @@ export default function Home({ className }) {
 }
 
 /* 📌 Componente reutilizable para las cajas de contenido 
-function ContentBox({ children, className }) {
+function ContentBox({ children, className }) {{`${className} flex bg-red-500 w-[82%] h-full rounded-l-[25px] overflow-auto`}
     return <div className={`p-4 flex items-center justify-center ${className}`}>{children}</div>;
 } */
 
 export default function Home({ className }) {
     return (
-        <div className={`${className} flex bg-red-500 w-[82%] h-full rounded-l-[25px] overflow-auto`}>
+        <div className="">
             <div className="flex flex-col basis-2/3 h-fit bg-yellow-500">
                 <div className="bg-gray-500 m-4 mt-3 p-2">SearchBar</div>
                 <div className="flex flex-col bg-gray-500 m-2">
