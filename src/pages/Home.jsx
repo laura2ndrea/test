@@ -1,5 +1,7 @@
 import users from "../data/users.json";
+import banners from "../data/banners.json";
 import Header from "../components/Header";
+import Main from "../components/Main";
 
 const user = users.find((u) => u.id === 1)
 
@@ -7,6 +9,10 @@ export default function Home( {className} ) {
     return (
         <div className={`fixed flex flex-col bg-red-500 w-full h-full overflow-auto ${className}`}>
             <Header user={user} className="md:flex-row md:justify-between md:items-center"/>
+            <div className="flex flex-col bg-gray-500 h-full sm:flex-row">
+                <Main className="sm:basis-[64%] lg:basis-[70%] bg-orange-500" user={user} banners={banners} />
+                <aside className="basis-1/3 sm:basis-[36%] lg:basis-[30%] bg-rose-500">hola</aside>
+            </div>
         </div>
     );
 }
