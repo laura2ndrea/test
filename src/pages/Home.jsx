@@ -1,9 +1,12 @@
+import users from "../data/users.json";
 import Header from "../components/Header";
+
+const user = users.find((u) => u.id === 1)
 
 export default function Home( {className} ) {
     return (
         <div className={`fixed flex flex-col bg-red-500 w-full h-full overflow-auto ${className}`}>
-            <Header className="md:basis-1/10 md:flex-row md:justify-between"/>
+            <Header user={user} className="md:flex-row md:justify-between md:items-center"/>
         </div>
     );
 }

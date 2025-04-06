@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faPlus } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 
-export default function Navbar({ className }) {
+export default function Navbar({ className="" }) {
     const navBarItems = ["Inicio", "Libros", "Editores", "Lectores"];
     return (
         <nav className={`hidden fixed h-full w-1/6 justify-center bg-primary-color ${className}`}>
