@@ -1,6 +1,6 @@
 export default function Banner({ banner, children, className=""}) {
     return (
-        <section className={`relative flex flex-col p-4 rounded-2xl w-[90%] items-center text-center ${className}`}>
+        <section className={`relative flex flex-col p-4 rounded-2xl w-[95%] items-center text-center m-2 ${className}`}>
             <img src={banner.srcImage} alt={banner.altImage} className="absolute inset-0 w-full h-full object-cover opacity-30 lg:hidden"/>
             <div className="flex flex-col z-2 items-center text-white text-lg h-full lg:items-start lg:justify-start lg:text-xl">
                 <h1 className="pb-2 sm:pb-4">{banner.title}</h1>

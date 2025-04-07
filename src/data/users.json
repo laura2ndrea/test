@@ -4,9 +4,11 @@
         "name": "Andrés Vargas",
         "image": "src/assets/images/photo-andres.jpg",
         "profession": "",
-        "bookshelf": 124,
-        "likes": 155,
-        "readers": 8,
-        "opinions": 163
+        "info": {
+            "bookshelf": 124,
+            "likes": 155,
+            "readers": 8,
+            "opinions": 163
+        }
     }
 ]

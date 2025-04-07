@@ -1,8 +1,8 @@
-export default function MiniCard( {title, text} ) {
+export default function MiniCard({ title, text, className="" }) {
     return (
-        <div className="border-[0.5px] border-gray-300 rounded-xl shadow-lg p-2 w-[66px] h-[66px] text-[#343A3F]">
+        <div className={`flex flex-col w-full justify-center border-[0.5px] border-gray-300 rounded-xl shadow-lg p-3 text-tertiary-color bg-white ${className}`}>
             <h1 className="text-xs font-thin">{title}</h1>
-            <p className="font-bold">{text}</p>
+            <p className="font-semibold text-xl">{text}</p>
         </div>
     ); 
 }
