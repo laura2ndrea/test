@@ -1,35 +1,41 @@
 import { useFetch } from "../hooks/useFetch";
-import UserCard from "./UserCard"; 
-import Button from "./Button"; 
+import React from "react";
+import UserCard from "./UserCard";
+import Button from "./Button";
 
-export default function Authors ({ url }) {
-    const {data, loading, error} = useFetch(url); 
+export default function Authors({ url, className="" }) {
+  const { data, loading, error } = useFetch(url);
 
-    if (loading) return <p>Cargando autores ...</p>; 
-    if (error) return <p>Error: {error}</p>; 
+  if (loading) return <p>Cargando autores ...</p>;
+  if (error) return <p>Error: {error}</p>;
+  const topAuthors = data?.results?.slice(0, 3) || [];
 
-    return (
-        <div className="w-full bg-[#F2F2F2] p-4 rounded-xl shadow-lg text-[#343A3F]">
-            <div className="flex justify-between">
-                <h1 className="text-2xl">Autores</h1>
-                <Button text="Ver todo" className="rounded-full text-xs bg-[#e6eee2]"/>
+  return (
+    <section className={`w-[94%] bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}>
+      <div className="flex justify-between">
+        <h1 className="text-xl font-semibold">Autores</h1>
+        <Button variant="tertiary">Ver todo</Button>
+      </div>
+      <div className="flex flex-col gap-1 py-4">
+        {topAuthors.length === 0 && (
+          <p className="text-sm italic text-gray-500">
+            No se encontraron autores.
+          </p>
+        )}
+        {topAuthors.map(({ id, name, species, image, episode }, index) => (
+        <React.Fragment key={id}>
+            {index > 0 && <hr className="border-gray-300" />}
+
+            <div className="flex justify-between items-center">
+              <UserCard image={image} name={name} text={species} />
+              <div className="flex flex justify-end items-center w-[35%] gap-2 m-2">
+                <h2 className="text-xs">Lectores</h2>
+                <p className="text-2xl">{episode.length}k</p>
+              </div>
             </div>
-            {data.results.slice(0,3).map(({ id, name, species, image, episode}) => (
-                <>
-                    {id > 1 ? <hr key={id + '-separator'}  className="text-gray-300"/> : null}
-                    <div key={id} className="flex m-2 justify-between items-center">
-                        <UserCard 
-                            image={image}
-                            name={name}
-                            text={species}
-                        />
-                        <div className="flex justify-between items-center w-[25%]">
-                            <h1 className="text-xs">Lectores</h1>
-                            <p className="text-2xl">{episode.length} k</p>
-                        </div>
-                    </div>
-                </>
-            ))}
-        </div>
-    );
+        </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
 }

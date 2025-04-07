@@ -4,7 +4,7 @@ export default function Button({ children, className="", variant }) {
     const variants = {
         primary: "bg-[#90B687] text-white text-sm rounded-lg shadow-lg",
         secondary: "bg-tertiary-color text-white text-xs rounded-lg",
-        tertiary: "bg-[#E6EEE2] text-secondary-color text-xs rounded-full"
+        tertiary: "bg-[#E6EEE2] text-primary-color text-xs rounded-full"
     }
     return (
         <button className={`${baseStyle} ${variants[variant] || variants.primary} ${className}`}>
