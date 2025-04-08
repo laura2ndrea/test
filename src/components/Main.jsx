@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Banner from "./Banner";
 import Button from "./Button";
-import MinicardSection from "./MinicardSection";
+import MiniCards from "./MiniCards";
 import Authors from "./Authors";
 import Recent from "./Recent";
 
@@ -15,12 +15,11 @@ export default function Main( {className="", user, banners, authors, recents} ) 
                 </Button>
             </Banner>
             <div className="grid grid-cols-1 xsm:grid-cols-[3fr_4fr] bg-green-500 w-full gap-2">
-                <MinicardSection data={user.info} className="bg-yellow-500 xsm:col-span-2 "/>
+                <MiniCards data={user.info} className="bg-yellow-500 xsm:col-span-2 "/>
                 <Authors url={authors} className=""/>
                 <Recent data={recents} className="" />
             </div>
-            <Banner banner={banners[1]} className="basis-1/4 bg-tertiary-color lg:flex-row lg:justify-between lg:p-6 lg:text-start ">
-            </Banner>
+            <Banner banner={banners[1]} className="basis-1/4 bg-tertiary-color lg:flex-row lg:justify-between lg:p-6 lg:text-start " />
         </main>
     );
 }
