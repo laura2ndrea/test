@@ -1,14 +1,14 @@
 [
-    {
-        "id": 1,
-        "name": "Andrés Vargas",
-        "image": "src/assets/images/photo-andres.jpg",
-        "profession": "",
-        "info": {
-            "bookshelf": 124,
-            "likes": 155,
-            "readers": 8,
-            "opinions": 163
-        }
+  {
+    "id": 1,
+    "name": "Andrés Vargas",
+    "image": "src/assets/images/photo-andres.jpg",
+    "profession": "",
+    "info": {
+      "bookshelf": 124,
+      "likes": 155,
+      "readers": 8,
+      "opinions": 163
     }
+  }
 ]

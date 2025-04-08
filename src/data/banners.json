@@ -1,23 +1,23 @@
 [
-    {
-        "id": 1,
-        "title": "Hola, Andrés! ¿Tienes ideas sobre un nuevo libro?", 
-        "text": [
-            "Vuelve tus libros tendencia mundial",
-            "¿Quieres empezar a escribir una vez más?"
-        ],
-        "srcImage": "src/assets/images/banner-one.svg",
-        "altImage": "Mujer con un libro"
-    },
-    {
-        "id": 2,
-        "title": "Andrés, nos gusta tu contenido y queremos darte los siguientes tips: ", 
-        "text": [
-            "1. Lee los comentarios de tus lectores.",
-            "2. Elige el género que quieres para tu público.",
-            "3. Busca siempre a un editor de confianza!"
-        ],
-        "srcImage": "src/assets/images/banner-two.svg",
-        "altImage": "Mujer leyendo un libro"
-    }
+  {
+    "id": 1,
+    "title": "Hola, Andrés! ¿Tienes ideas sobre un nuevo libro?",
+    "text": [
+      "Vuelve tus libros tendencia mundial",
+      "¿Quieres empezar a escribir una vez más?"
+    ],
+    "srcImage": "src/assets/images/banner-one.svg",
+    "altImage": "Mujer con un libro"
+  },
+  {
+    "id": 2,
+    "title": "Andrés, nos gusta tu contenido y queremos darte los siguientes tips: ",
+    "text": [
+      "1. Lee los comentarios de tus lectores.",
+      "2. Elige el género que quieres para tu público.",
+      "3. Busca siempre a un editor de confianza!"
+    ],
+    "srcImage": "src/assets/images/banner-two.svg",
+    "altImage": "Mujer leyendo un libro"
+  }
 ]

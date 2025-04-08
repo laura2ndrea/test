@@ -1,28 +1,26 @@
 [
-    {
-        "id": 1,
-        "user": "Victoria Evans",
-        "interaction": "ha comentado en 'La Ciudadela'",
-        "date": "May 7"
-    },
-    {
-        "id": 2,
-        "user": "Ethan Williams",
-        "interaction": "ha comenzado a seguirte",
-        "date": "May 5"
-    },
-    {
-        "id": 3,
-        "user": "Nathan Fox",
-        "interaction": "le ha gustado 'Inolvidable'",
-        "date": "May 1"
-        
-    },
-    {
-        "id": 4,
-        "user": "Megan Walsh",
-        "interaction": "ha comenzado a seguirte",
-        "date": "Apr 29"
-        
-    }
+  {
+    "id": 1,
+    "user": "Victoria Evans",
+    "interaction": "ha comentado en 'La Ciudadela'",
+    "date": "May 7"
+  },
+  {
+    "id": 2,
+    "user": "Ethan Williams",
+    "interaction": "ha comenzado a seguirte",
+    "date": "May 5"
+  },
+  {
+    "id": 3,
+    "user": "Nathan Fox",
+    "interaction": "le ha gustado 'Inolvidable'",
+    "date": "May 1"
+  },
+  {
+    "id": 4,
+    "user": "Megan Walsh",
+    "interaction": "ha comenzado a seguirte",
+    "date": "Apr 29"
+  }
 ]
