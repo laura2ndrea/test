@@ -7,7 +7,7 @@
   --color-secondary-color: #E9A763;
   --color-tertiary-color: #343A3F;
   --color-backgray-color: #F2F2F2; 
-  --breakpoint-xsm: 400px; 
+  --breakpoint-xsm: 550px; 
 }
 
 /*html, body, #root {

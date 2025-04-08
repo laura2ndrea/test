@@ -8,7 +8,7 @@ export default function MinicardSection({ data, className="" }) {
         opinions: "Opiniones"
     };
     return (
-        <section className={`grid grid-cols-2 gap-x-20 gap-y-3 justify-items-start content-center ${className}`}>
+        <section className={`flex flex-wrap w-full h-fit justify-between content-center ${className}`}>
             {Object.entries(data).map(([key, value], index) => (
                 <MiniCard key={key} title={labels[key]} text={`${value}${index > 0 ? "k":""}`}/>
             ))}

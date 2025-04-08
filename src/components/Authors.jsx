@@ -11,7 +11,7 @@ export default function Authors({ url, className="" }) {
   const topAuthors = data?.results?.slice(0, 3) || [];
 
   return (
-    <section className={`w-[94%] bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}>
+    <section className={`w-full bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}>
       <div className="flex justify-between">
         <h1 className="text-xl font-semibold">Autores</h1>
         <Button variant="tertiary">Ver todo</Button>
@@ -25,11 +25,10 @@ export default function Authors({ url, className="" }) {
         {topAuthors.map(({ id, name, species, image, episode }, index) => (
         <React.Fragment key={id}>
             {index > 0 && <hr className="border-gray-300" />}
-
             <div className="flex justify-between items-center">
               <UserCard image={image} name={name} text={species} />
               <div className="flex flex justify-end items-center w-[35%] gap-2 m-2">
-                <h2 className="text-xs">Lectores</h2>
+                <h2 className="font-light text-gray-500 text-[11px]">Lectores</h2>
                 <p className="text-2xl">{episode.length}k</p>
               </div>
             </div>
