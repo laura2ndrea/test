@@ -12,16 +12,15 @@ const url = "https://rickandmortyapi.com/api/character";
 export default function Home({ className = "" }) {
   return (
     <div
-      className={`fixed flex flex-col bg-red-500 w-full h-full overflow-auto ${className}`}
+      className={`fixed flex flex-col w-full h-full overflow-auto ${className}`}
     >
       <Header
         user={user}
         className="md:flex-row md:justify-between md:items-center"
       />
-      <div className="grid grid-cols-1 h-fit bg-gray-500 xlg:grid-cols-[2fr_1fr] min-h-fit">
+      <div className="grid grid-cols-1 h-fit bg-white xlg:grid-cols-[2fr_1fr] min-h-fit">
         {/* Main content and sidebar layout */}
         <Main
-          className="bg-orange-500"
           user={user}
           banners={banners}
           authors={url}

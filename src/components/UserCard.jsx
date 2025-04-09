@@ -1,6 +1,6 @@
 export default function UserCard({ image, name, text, className = "" }) {
   return (
-    <div className={`flex items-center text-xs gap-x-2 ${className} `}>
+    <div className={`flex items-center text-xs text-tertiary-color gap-x-2 ${className} `}>
       {/* User profile image */}
       <img src={image} alt={name} className="w-9 h-9 rounded-xl shadow-lg" />
       <div>

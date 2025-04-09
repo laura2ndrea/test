@@ -9,13 +9,13 @@ export default function Header({ user, className = "" }) {
     "p-[6px] transform transition duration-400 hover:scale-115 rounded-lg";
   return (
     <header
-      className={`flex flex-col-reverse justify-center p-1 bg-blue-500 w-full ${className}`}
+      className={`flex flex-col-reverse justify-center p-1 bg-white w-full ${className}`}
     >
       <SearchBar
         placeholder="Buscar por libros, personas o artículos"
         className="basis-1/2 md:h-1/2 md:ml-4"
       />
-      <div className="flex basis-1/2 p-2 px-5 items-center justify-end gap-x-4 md:basis-1/3 md:justify-between md:gap-x-2 bg-yellow-500">
+      <div className="flex basis-1/2 p-2 px-5 items-center justify-end gap-x-4 md:basis-1/3 md:justify-between md:gap-x-2 bg-white">
         <div>
           <FontAwesomeIcon
             icon={faBell}
