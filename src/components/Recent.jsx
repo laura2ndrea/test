@@ -3,7 +3,8 @@ import Button from "./Button";
 function RecentItem({ user, interaction, date, showSeparator }) {
   return (
     <>
-      {showSeparator && <hr className="text-gray-300" />}
+      {showSeparator && <hr className="text-gray-300" />}{" "}
+      {/* Separator between items, except the first one */}
       <div className="flex justify-between items-center py-2 text-xs">
         <p className="text-[11px] w-[70%]">
           <b>{user}</b> {interaction}
@@ -30,7 +31,7 @@ export default function Recent({ data, className = "" }) {
             user={d.user}
             interaction={d.interaction}
             date={d.date}
-            showSeparator={i > 0}
+            showSeparator={i > 0} // Show separator if it's not the first item
           />
         ))}
       </div>

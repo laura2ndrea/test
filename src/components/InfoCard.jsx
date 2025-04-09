@@ -13,6 +13,7 @@ export default function InfoCard({
     <div
       className={`bg-white w-full min-h-full pb-3 rounded-2xl shadow-lg text-xs ${className}`}
     >
+      {/* Book image */}
       <img
         src={imageBook}
         alt={title}
@@ -22,6 +23,7 @@ export default function InfoCard({
         <h2 className="pt-3 font-bold">{title}</h2>
         <p className="pt-3 font-light text-[11px] text-gray-500">{review}</p>
       </div>
+      {/* Author information */}
       <UserCard
         image={imageAuthor}
         name={author}

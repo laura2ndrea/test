@@ -5,11 +5,10 @@ import Button from "./Button";
 
 export default function Authors({ url, className = "" }) {
   const { data, loading, error } = useFetch(url);
-
   if (loading) return <p>Cargando autores ...</p>;
   if (error) return <p>Error: {error}</p>;
+  // Only display the top 3 authors (Rick and Morty characters)
   const topAuthors = data?.results?.slice(0, 3) || [];
-
   return (
     <section
       className={`w-full h-fit bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}

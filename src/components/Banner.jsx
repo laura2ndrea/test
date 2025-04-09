@@ -3,6 +3,7 @@ export default function Banner({ banner, children, className = "" }) {
     <section
       className={`relative flex flex-col p-4 max-h-[200px] rounded-2xl w-full items-center text-center m-2 sm:flex-row sm:justify-between sm:p-6 sm:text-start ${className}`}
     >
+      {/* Background image for small screens */}
       <img
         src={banner.srcImage}
         alt={banner.altImage}
@@ -17,6 +18,7 @@ export default function Banner({ banner, children, className = "" }) {
         </div>
         {children}
       </div>
+      {/* Banner image for larger screens */}
       <img
         src={banner.srcImage}
         alt={banner.altImage}
@@ -25,5 +27,3 @@ export default function Banner({ banner, children, className = "" }) {
     </section>
   );
 }
-
-/*w-[calc(45%-40px)] md:w-[calc(45%-120px)] xlg:w-[calc(45%-40px)]*/

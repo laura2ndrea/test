@@ -9,7 +9,7 @@ import Latest from "../components/Latest";
 const user = users.find((u) => u.id === 1);
 const url = "https://rickandmortyapi.com/api/character";
 
-export default function Home({ className }) {
+export default function Home({ className = "" }) {
   return (
     <div
       className={`fixed flex flex-col bg-red-500 w-full h-full overflow-auto ${className}`}
@@ -19,6 +19,7 @@ export default function Home({ className }) {
         className="md:flex-row md:justify-between md:items-center"
       />
       <div className="grid grid-cols-1 h-fit bg-gray-500 xlg:grid-cols-[2fr_1fr] min-h-fit">
+        {/* Main content and sidebar layout */}
         <Main
           className="bg-orange-500"
           user={user}
@@ -26,7 +27,7 @@ export default function Home({ className }) {
           authors={url}
           recents={recents}
         />
-        <Latest className="" data={books} />
+        <Latest data={books} />
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ export default function SearchBar({ className = "", placeholder }) {
     <form
       className={`flex items-center w-[calc(100%-16px)] h-1/3 bg-backgray-color p-2 my-4 mx-2 rounded-2xl ${className}`}
     >
+      {/* Search icon */}
       <FontAwesomeIcon
         icon={faMagnifyingGlass}
         className="px-4 text-gray-600"

@@ -22,6 +22,7 @@ export default function MiniCards({ data, className = "" }) {
         <MiniCard
           key={key}
           title={labels[key]}
+          // Display 'k' only for indexes > 0 (simulate thousands)
           text={`${value}${index > 0 ? "k" : ""}`}
         />
       ))}

@@ -8,6 +8,7 @@ export default function Latest({ data, className="" }) {
         <h1 className="text-xl font-semibold mb-2">Lo último</h1>
         <Button variant="tertiary">Ver todo</Button>
       </div>
+      {/* Tabs for filtering content */}
       <ul
         className="flex mx-1 mb-4 text-xs leading-loose font-extralight"
         role="tablist"
@@ -19,6 +20,7 @@ export default function Latest({ data, className="" }) {
           <a href="#"> Popular</a>
         </li>
       </ul>
+      {/* Display info cards */}
       <div className="flex flex-col gap-10 xsm:flex-row xlg:flex-col">
         {data.map((item) => (
           <InfoCard key={item.id} {...item} className="" />

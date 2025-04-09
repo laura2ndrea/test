@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faPlus, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBook,
+  faPlus,
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 
 export default function Navbar({ className = "" }) {
   const [open, setOpen] = useState(false);
   const navBarItems = ["Inicio", "Libros", "Editores", "Lectores"];
+  // Navbar content reused in both desktop and mobile
   const NavContent = () => (
     <div className="flex flex-col h-full w-[85%] justify-between items-center py-[80px]">
       <FontAwesomeIcon
@@ -32,14 +38,16 @@ export default function Navbar({ className = "" }) {
       {/* Hamburger button for small screens */}
       {!open && (
         <button
-        onClick={() => setOpen(true)}
-        className="md:hidden fixed top-3 left-4 z-50 text-white bg-primary-color p-2 aspect-square rounded-lg"
+          onClick={() => setOpen(true)}
+          className="md:hidden fixed top-3 left-4 z-50 text-white bg-primary-color p-2 aspect-square rounded-lg"
         >
           <FontAwesomeIcon icon={faBars} size="lg" />
         </button>
       )}
-      {/* Navbar for large screens */} 
-      <nav className={`hidden fixed h-full w-1/6 justify-center bg-primary-color ${className}`}>
+      {/* Navbar for large screens */}
+      <nav
+        className={`hidden fixed h-full w-1/6 justify-center bg-primary-color ${className}`}
+      >
         <NavContent />
       </nav>
       {/* Expanded hamburger menu */}
@@ -58,4 +66,3 @@ export default function Navbar({ className = "" }) {
     </>
   );
 }
-
