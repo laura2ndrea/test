@@ -31,7 +31,7 @@ export default function Main({
       </Banner>
       <div className="flex flex-col gap-2 bg-green-500 pt-2 w-full sm:flex-row">
         <div className="flex flex-col gap-2 sm:basis-2/3 sm:justify-between">
-          <MiniCards data={user.info} className="bg-yellow-500 sm:grid-cols-4" />
+          <MiniCards data={user.info} className="bg-yellow-500 xsm:grid-cols-4 xl:gap-[3.5vw]" />
           <Authors url={authors} className="" />
         </div>
         <Recent data={recents} className="sm:basis-1/3" />
