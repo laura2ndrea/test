@@ -12,13 +12,13 @@ export default function Authors({ url, className = "" }) {
 
   return (
     <section
-      className={`w-full bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}
+      className={`w-full h-fit bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}
     >
       <div className="flex justify-between">
         <h1 className="text-xl font-semibold">Autores</h1>
         <Button variant="tertiary">Ver todo</Button>
       </div>
-      <div className="flex flex-col gap-1 py-4">
+      <div className="flex flex-col gap-2 py-2">
         {topAuthors.length === 0 && (
           <p className="text-sm italic text-gray-500">
             No se encontraron autores.
@@ -29,7 +29,7 @@ export default function Authors({ url, className = "" }) {
             {index > 0 && <hr className="border-gray-300" />}
             <div className="flex justify-between items-center">
               <UserCard image={image} name={name} text={species} />
-              <div className="flex flex justify-end items-center w-[35%] gap-2 m-2">
+              <div className="flex flex justify-end items-center w-[35%] gap-2">
                 <h2 className="font-light text-gray-500 text-[11px]">
                   Lectores
                 </h2>

@@ -3,7 +3,7 @@ import Button from "./Button";
 function RecentItem({ user, interaction, date, showSeparator }) {
   return (
     <>
-      {showSeparator && <hr className="text-gray-300 my-2" />}
+      {showSeparator && <hr className="text-gray-300" />}
       <div className="flex justify-between items-center py-2 text-xs">
         <p className="text-[11px] w-[70%]">
           <b>{user}</b> {interaction}
@@ -17,13 +17,13 @@ function RecentItem({ user, interaction, date, showSeparator }) {
 export default function Recent({ data, className = "" }) {
   return (
     <section
-      className={`w-full bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}
+      className={`w-full h-full bg-backgray-color p-3 rounded-xl shadow-lg text-tertiary-color ${className}`}
     >
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-semibold">Reciente</h1>
         <Button variant="tertiary">Ver todo</Button>
       </div>
-      <div className="py-4">
+      <div className="flex flex-col py-2 gap-2">
         {data.map((d, i) => (
           <RecentItem
             key={d.id}

@@ -10,9 +10,9 @@ export default function Header({ user, className = "" }) {
     >
       <SearchBar
         placeholder="Buscar por libros, personas o artículos"
-        className="basis-1/2 md:basis-3/6 md:h-1/2 md:ml-8"
+        className="basis-1/2 md:h-1/2 md:ml-8"
       />
-      <div className="flex basis-1/2 p-2 px-4 items-center justify-end gap-x-4 md:basis-[36%] md:justify-between md:gap-x-2 lg:basis-[30%] bg-yellow-500">
+      <div className="flex basis-1/2 p-2 px-5 items-center justify-end gap-x-4 md:basis-1/3 md:justify-between md:gap-x-2 bg-yellow-500">
         <div>
           <FontAwesomeIcon
             icon={faBell}

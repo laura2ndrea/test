@@ -11,7 +11,7 @@ export default function InfoCard({
 }) {
   return (
     <div
-      className={`bg-white w-full h-fit pb-3 rounded-2xl shadow-lg text-xs ${className}`}
+      className={`bg-white w-full min-h-full pb-3 rounded-2xl shadow-lg text-xs ${className}`}
     >
       <img
         src={imageBook}

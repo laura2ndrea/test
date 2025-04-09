@@ -18,15 +18,15 @@ export default function Home({ className }) {
         user={user}
         className="md:flex-row md:justify-between md:items-center"
       />
-      <div className="grid grid-cols-1 bg-gray-500 sm:flex-row">
+      <div className="grid grid-cols-1 h-fit bg-gray-500 xlg:grid-cols-[2fr_1fr] min-h-fit">
         <Main
-          className="sm:basis-[64%] lg:basis-[70%] bg-orange-500"
+          className="bg-orange-500"
           user={user}
           banners={banners}
           authors={url}
           recents={recents}
         />
-        <Latest className="sm:basis-[36%] lg:basis-[30%]" data={books} />
+        <Latest className="" data={books} />
       </div>
     </div>
   );

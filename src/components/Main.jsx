@@ -19,7 +19,7 @@ export default function Main({
     >
       <Banner
         banner={banners[0]}
-        className="basis-1/4 bg-secondary-color lg:flex-row lg:justify-between lg:p-6 lg:text-start "
+        className="bg-secondary-color"
       >
         <Button
           variant="secondary"
@@ -29,14 +29,16 @@ export default function Main({
           <FontAwesomeIcon icon={faPlus} className="ml-2 text-base" />
         </Button>
       </Banner>
-      <div className="grid grid-cols-1 xsm:grid-cols-[3fr_4fr] bg-green-500 w-full gap-2">
-        <MiniCards data={user.info} className="bg-yellow-500 xsm:col-span-2 " />
-        <Authors url={authors} className="" />
-        <Recent data={recents} className="" />
+      <div className="flex flex-col gap-2 bg-green-500 pt-2 w-full sm:flex-row">
+        <div className="flex flex-col gap-2 sm:basis-2/3 sm:justify-between">
+          <MiniCards data={user.info} className="bg-yellow-500 sm:grid-cols-4" />
+          <Authors url={authors} className="" />
+        </div>
+        <Recent data={recents} className="sm:basis-1/3" />
       </div>
       <Banner
         banner={banners[1]}
-        className="basis-1/4 bg-tertiary-color lg:flex-row lg:justify-between lg:p-6 lg:text-start "
+        className="bg-tertiary-color"
       />
     </main>
   );

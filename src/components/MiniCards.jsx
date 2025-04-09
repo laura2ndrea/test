@@ -17,7 +17,7 @@ export default function MiniCards({ data, className = "" }) {
     opinions: "Opiniones",
   };
   return (
-    <section className={`grid grid-cols-2 gap-2 w-full ${className}`}>
+    <section className={`grid grid-cols-2 gap-[2.5vw] w-full ${className}`}>
       {Object.entries(data).map(([key, value], index) => (
         <MiniCard
           key={key}
