@@ -39,7 +39,7 @@ export default function Navbar({ className = "" }) {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          className="md:hidden fixed top-3 left-4 z-50 text-primary-color p-2 aspect-square rounded-lg"
+          className="md:hidden fixed top-2 left-4 z-50 text-primary-color p-2 aspect-square rounded-lg"
         >
           <FontAwesomeIcon icon={faBars} size="lg" />
         </button>
